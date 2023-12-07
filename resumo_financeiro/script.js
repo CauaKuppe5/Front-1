@@ -1,32 +1,33 @@
 
-function calculateDailyProfit() {
+function calcula_lucro_diario() {
    
-    const dailySales = 150;
-    const dailyExpenses = 50; 
-    const dailyProfit = dailySales - dailyExpenses;
+    const venda_diaria = 200;
+    const despesa_diaria = 50; 
+    const lucro_diario = venda_diaria - despesa_diaria;
 
     return {
-        profit: dailyProfit.toFixed(2),
-        expenses: dailyExpenses.toFixed(2)
+        lucro: lucro_diario.toFixed(2),
+        despesa: despesa_diaria.toFixed(2)
     };
 }
 
-function calculateMonthlyProfit() {
+function calcula_lucro_mensal() {
     
-    const monthlySales = 600;
-    const monthlyExpenses = 200; 
-    const monthlyProfit = monthlySales - monthlyExpenses;
+    const venda_mensal = 6200;
+    const despesa_mensal = 1550; 
+    const lucro_mensal = venda_mensal - despesa_mensal;
 
     return {
-        profit: monthlyProfit.toFixed(2),
-        expenses: monthlyExpenses.toFixed(2)
+        lucro: lucro_mensal.toFixed(2),
+        despesa: despesa_mensal.toFixed(2)
     };
 }
 
-const dailySummary = calculateDailyProfit();
-document.getElementById('dailyProfit').textContent = `Lucro: R$ ${dailySummary.profit}`;
-document.getElementById('dailyExpenses').textContent = `Despesas: R$ ${dailySummary.expenses}`;
+const resumodiario = calcula_lucro_diario();
+document.getElementById('lucro_diario').textContent = `Lucro: R$ ${resumodiario.lucro}`;
+document.getElementById('despesa_diaria').textContent = `Despesas: R$ ${resumodiario.despesa}`;
 
-const monthlySummary = calculateMonthlyProfit();
-document.getElementById('monthlyProfit').textContent = `Lucro: R$ ${monthlySummary.profit}`;
-document.getElementById('monthlyExpenses').textContent = `Despesas: R$ ${monthlySummary.expenses}`;
+const resumomensal = calcula_lucro_mensal();
+document.getElementById('lucro_mensal').textContent = `Lucro: R$ ${resumomensal.lucro}`;
+document.getElementById('despesa_mensal').textContent = `Despesas: R$ ${resumomensal.despesa}`;
+
