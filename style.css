@@ -15,11 +15,10 @@ body {
 }
 
 form {
-    display: flex;
+    display: flow;
     flex-direction: column;
     text-align: center;
 }
-
 label {
     margin-bottom: 8px;
 }
@@ -27,6 +26,10 @@ label {
 input {
     padding: 8px;
     margin-bottom: 16px;
+}
+select{
+    padding: 5px;
+    margin-bottom: 10px;
 }
 
 button {
@@ -45,7 +48,7 @@ main{
     max-width: 500px;
     background-color: var(--color-purple-200);
     display: flex;
-    padding: 16px;
+    padding: 30px;
     border-radius: 16px;
     gap: 16px;
     box-shadow: 8px 8px 6px 3px black;

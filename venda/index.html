@@ -4,13 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title> 
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <main>
         <nav id="menu"><a href="/home/index.html">Home</a></nav>
         <form>
+            <label>Produto</label>
+            <br>
             <select name="produto" id="produto">
                 <option value="">Selecione</option>
             </select>
@@ -18,11 +20,15 @@
             <label>Quantidade</label>
             <br>
             <input type="number" name="quantidade" id="quantidade">
-            <br><br>
+            <br>
+            <label>Total da Venda</label>
+            <br>
+            <input type="number" name="venda" id="venda">
+            <br>
             <button type="submit">Venda</button>
         </form>
+        
     </main>
     <script type="module" src="./script.js"></script>
 </body>
-
 </html>
